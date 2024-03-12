@@ -1,22 +1,24 @@
-let itemUn = document.querySelector(".item-1")
-let itemDeux = document.querySelector(".item-2")
-let itemTrois = document.querySelector(".item-3")
-let itemQuatre = document.querySelector(".item-4")
+let buttons = document.querySelectorAll(".content")
+let active = document.querySelectorAll(".active")
 
-let active = document.querySelector(".active")
-
-itemUn.addEventListener('click', () => {
-    active.classList.toggle("active")
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        button.style.marginBottom = "20px"
+    })
 })
 
-itemDeux.addEventListener('click', () => {
-    active.classList.toggle("active")
+buttons[0].addEventListener("click", () => {
+    active[0].classList.toggle("active-0")
 })
 
-itemTrois.addEventListener('click', () => {
-    active.classList.toggle("active")
+buttons[1].addEventListener("click", () => {
+    active[1].classList.toggle("active-1")
 })
 
-itemQuatre.addEventListener('click', () => {
-    active.classList.toggle("active")
+buttons[2].addEventListener("click", () => {
+    active[2].classList.toggle("active-2")
+})
+
+buttons[3].addEventListener("click", () => {
+    active[3].classList.toggle("active-3")
 })

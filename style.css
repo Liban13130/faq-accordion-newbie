@@ -53,6 +53,15 @@ body{
     cursor: pointer;
 }
 
-.container .active{
+/* .container .content{
+    margin-bottom: 20px;
+} */
+
+.container .active-0,
+.container .active-1,
+.container .active-2,
+.container .active-3
+{
     display: none;
+    width: 150px;
 }
